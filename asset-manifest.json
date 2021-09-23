@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/winners%60hub/static/css/main.e477b82c.chunk.css",
-    "main.js": "/winners%60hub/static/js/main.a581d4bc.chunk.js",
-    "main.js.map": "/winners%60hub/static/js/main.a581d4bc.chunk.js.map",
-    "runtime-main.js": "/winners%60hub/static/js/runtime-main.057ec0a6.js",
-    "runtime-main.js.map": "/winners%60hub/static/js/runtime-main.057ec0a6.js.map",
-    "static/js/2.d5710d88.chunk.js": "/winners%60hub/static/js/2.d5710d88.chunk.js",
-    "static/js/2.d5710d88.chunk.js.map": "/winners%60hub/static/js/2.d5710d88.chunk.js.map",
-    "index.html": "/winners%60hub/index.html",
-    "static/css/main.e477b82c.chunk.css.map": "/winners%60hub/static/css/main.e477b82c.chunk.css.map",
-    "static/js/2.d5710d88.chunk.js.LICENSE.txt": "/winners%60hub/static/js/2.d5710d88.chunk.js.LICENSE.txt"
+    "main.css": "/winnershub/static/css/main.e477b82c.chunk.css",
+    "main.js": "/winnershub/static/js/main.a581d4bc.chunk.js",
+    "main.js.map": "/winnershub/static/js/main.a581d4bc.chunk.js.map",
+    "runtime-main.js": "/winnershub/static/js/runtime-main.eb7f2db8.js",
+    "runtime-main.js.map": "/winnershub/static/js/runtime-main.eb7f2db8.js.map",
+    "static/js/2.d5710d88.chunk.js": "/winnershub/static/js/2.d5710d88.chunk.js",
+    "static/js/2.d5710d88.chunk.js.map": "/winnershub/static/js/2.d5710d88.chunk.js.map",
+    "index.html": "/winnershub/index.html",
+    "static/css/main.e477b82c.chunk.css.map": "/winnershub/static/css/main.e477b82c.chunk.css.map",
+    "static/js/2.d5710d88.chunk.js.LICENSE.txt": "/winnershub/static/js/2.d5710d88.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.057ec0a6.js",
+    "static/js/runtime-main.eb7f2db8.js",
     "static/js/2.d5710d88.chunk.js",
     "static/css/main.e477b82c.chunk.css",
     "static/js/main.a581d4bc.chunk.js"
