@@ -1,10 +1,12 @@
 import React from 'react'
-import eg from '../images/eg.jpg'
+import eg from '../images/eg.jpg';
+import { SRLWrapper } from "simple-react-lightbox";
 
 const Menu = () => {
     return (
         <section className='section-three'>
             <div className='container'>
+                <SRLWrapper>
                 <div className='gallery'>
                     <a href = {eg}>
                         <div className='single-img'>
@@ -87,6 +89,8 @@ const Menu = () => {
                         </div>
                     </a>
                 </div>
+                </SRLWrapper>
+                
             </div>
         </section>
     )
