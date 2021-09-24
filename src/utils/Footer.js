@@ -1,9 +1,12 @@
+import { FaMailBulk } from 'react-icons/fa';
+
+
 const Footer = () => {
     return (
         <footer className='footer'>
             <div className='footer-container container'>
                 <div>
-                    <h2>WINNER_LAB</h2>
+                    <h2>ARMOR_LAB</h2>
                     <p>This is basically a software 
                         designing app that illustarte the 
                         importants of designing from the core 
@@ -12,19 +15,18 @@ const Footer = () => {
                 </div>
                 <div>
                     <h3>Free Subscription!</h3>
-                    <p>thsoi kjbshuh jhbgyg kjgd
-                        hjdvy jghvftdy hbdy hbdu djbh
-                        duygsuy hbjd kjhbdsjb kjbduj
+                    <p>For mass order drop us a mail..
+                        we promise to reply immediately
                     </p>
                     <div className='subs'>
-                        <i>Ul</i>
+                        < FaMailBulk/>
                         <input type='email' id='email' 
                         placeholder='Email Address'/>
                         <button type='submit'>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
-            <p>&copy; Copyright Armor_LaB . SIMPLE AND NICE TEMPLATE</p>
+            <p>&copy; Copyright Armor_Lab . This is a subsidiary of ARMOR_BRAND</p>
         </footer>
     )
 }

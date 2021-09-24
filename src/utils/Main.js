@@ -5,10 +5,9 @@ const Main = () => {
                 <div className='sec-one-left'>
                     {/* image here */}
                     <div>
-                        <h3>this is a header class 3</h3>
-                        <p>This is a paragraph class 1
-                            it can be used to do a lot of 
-                            stuff.
+                        <h3>About our basic works...</h3>
+                        <p>Fashion is the armor to survive the reality 
+                            of everyday life
                         </p>
                         <a href = '#' className='btn'>view all</a>
                     </div>
@@ -20,10 +19,10 @@ const Main = () => {
                             PHOTOGRAPHER
                         </h3>
                         <p>
-                            this is my own production and a build of
-                            my own production this is basically essen
-                            tial when it comes to attending matters of 
-                            veryb impotryhvh jghfyh
+                           Fashion is not something that exist in dresses only. 
+                           Fashion is in the sky in the street,
+                           Fashion has to do with ideas the way we live,
+                           what is happening
                         </p>
                         <a href='#' className='btn'>view all</a>
                     </div>
@@ -37,8 +36,7 @@ const Main = () => {
                         </div>
                     </div>
                     <h3>
-                        "Taking an image, freezing a moment, reveals 
-                        how rich reality truly is."
+                        "Abeg, Life is too short to wear boring clothes"
                     </h3>
                 </div>
             </div>

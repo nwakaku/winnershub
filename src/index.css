@@ -1,12 +1,12 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root{
   --white: #ddd;
   --dark: #111;
   --darkGrey: #474b4f;
   --lightGrey: #6b6e70;
-  --lightGreen: #86c232;
-  --darkGreen: #61892f;
+  --lightGreen: #ff4545;
+  --darkGreen: red;
   --transition: all 0.5s ease;
 }
 *{
@@ -70,7 +70,14 @@ h1,h2,h3,h4,h5,h6, p{
 .header{
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))
-  , url('./images/eg.jpg') center/cover no-repeat;
+  , url('https://images.unsplash.com/photo-1497997092403-f091fcf5b6c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+  color: #fff;
+}
+
+.headergal{
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))
+  , url('https://thumbs.dreamstime.com/b/needle-bobbin-black-thread-black-background-space-text-needle-bobbin-black-thread-black-118506035.jpg') center/cover no-repeat;
   color: #fff;
 }
 .top-nav a{
@@ -157,14 +164,14 @@ h1,h2,h3,h4,h5,h6, p{
   border-radius: 50%;
 }
 .about-content h2{
-  font-size: 48px;
+  font-size: 42px;
   text-align: center;
   margin-bottom: 35px;
   color: var(--lightGreen);
 }
 .about-content h3{
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 100;
   background: rgba(255, 255, 255, 0.1);
   width: 400px;
@@ -173,7 +180,7 @@ h1,h2,h3,h4,h5,h6, p{
 }
 blockquote{
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   opacity: 0.9;
   width: 60vw;
   margin: 45px auto 15px auto;
@@ -221,7 +228,7 @@ blockquote span{
 }
 .sec-one-left{
   height: 100vh;
-  background: url('images/eg.jpg') center/cover no-repeat;
+  background: url('https://i.pinimg.com/originals/ba/ff/a8/baffa8a0fa572a303e8697b944ae207c.jpg') center/cover no-repeat;
   box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
@@ -262,13 +269,13 @@ blockquote span{
 }
 .work-img-1{
   background: linear-gradient(rgba(0,.0,.0,.0), rgba(0,.0,.0,0.6)),
-  url('images/eg.jpg') center/cover no-repeat;
+  url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80') center/cover no-repeat;
   height: 400px;
   transition: var(--transition);
 }
 .work-img-2{
   background: linear-gradient(rgba(0,.0,.0,.0), rgba(0,.0,.0,0.6)),
-  url('images/eg.jpg') center/cover no-repeat;
+  url('https://cdn.lookastic.com/looks/sweatshirt-sweatpants-ankle-boots-large-31448.jpg') center/cover no-repeat;
   height: 400px;
   transition: var(--transition);
 }
@@ -308,7 +315,7 @@ blockquote span{
   width: 100%;
   height: 100%;
   font-size: 50px;
-  background: rgba(134, 194, 50, 0.4);
+  background: rgb(255, 69, 69, 0.4);
   opacity: 0;
   transition: var(--transition);
 }
@@ -431,6 +438,16 @@ blockquote span{
   .search-icon i:hover{
     transform: scale(1.2);
   }
+
+  /* section five */
+  .contact-middle{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .contact-bottom{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+  }
 }
 
 @media screen and (min-width: 1000px){
@@ -536,4 +553,131 @@ blockquote span{
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+/* CONTACT US SECTION */
+.section-five{
+  margin: 40px 0;
+}
+.section-five .container div{
+  margin: 20px 0;
+}
+.contact-top{
+  text-align: center;
+}
+.contact-top h3{
+  font-size: 28px;
+}
+.contact-top p{
+  font-weight: 300;
+  width: 70%;
+  margin: 0 auto;
+}
+.contact-middle div{
+  text-align: center;
+  padding: 25px 0;
+  background: var(--dark);
+  color: #fff;
+}
+.contact-middle div span{
+  display: block;
+}
+.contact-icon{
+  font-size: 30px;
+}
+.contact-middle div span:nth-child(2){
+  font-size: 18px;
+  font-weight: bold;
+}
+.contact-middle div p{
+  font-weight: 300;
+  opacity: 0.7;
+}
+.contact-bottom{
+  margin-top: 50px !important;
+}
+.form input[type = 'text'], .form input[type = 'email'], .form textarea{
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid var(--lightGreen);
+  outline: none;
+  border-radius: 5px;
+}
+.contact-bottom .form{
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 678px){
+  .contact-middle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+  }
+}
+
+/* pagination css */
+.bd-grid{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+.sneaker__pages{
+  margin-top: var(--mb-6);
+}
+
+.sneaker__pag{
+  padding: .5rem 1rem;
+  border: 1px solid var(--dark-color);
+}
+
+.sneaker__pag:hover{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+/* VARIABLE CSS */
+:root{
+  --header-height: 3rem;
+
+  /* Font Weight */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* Colors */
+  --dark-color: #141414;
+  --dark-color-light: #8a8a8a;
+  --dark-color-lighten: #F2F2F2;
+  --white-color: #FFF;
+
+  /* Font and typography */
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 1.25rem;
+  --bigger-font-size: 1.5rem;
+  --biggest-font-size: 2rem;
+  --h2-font-size:1.25rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .813rem;
+
+  /* Margenes */
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  /* z index */
+  --z-fixed: 100;
+
+  /* Rotate img */
+  --rotate-img: rotate(-30deg);
 }
