@@ -17,6 +17,8 @@ const Menu = () => {
     return (
         <section className='section-three'>
             <div className='container'>
+                <h2>OUR WORKS</h2>
+                <span>@Armor_Lab</span>
                 <SRLWrapper>
                 <div className='gallery'>
                     <a href = {j}>
