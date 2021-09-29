@@ -1,20 +1,32 @@
 {
   "files": {
-    "main.css": "/winnershub/static/css/main.e477b82c.chunk.css",
-    "main.js": "/winnershub/static/js/main.a581d4bc.chunk.js",
-    "main.js.map": "/winnershub/static/js/main.a581d4bc.chunk.js.map",
+    "main.css": "/winnershub/static/css/main.d7b90318.chunk.css",
+    "main.js": "/winnershub/static/js/main.2ea2303f.chunk.js",
+    "main.js.map": "/winnershub/static/js/main.2ea2303f.chunk.js.map",
     "runtime-main.js": "/winnershub/static/js/runtime-main.eb7f2db8.js",
     "runtime-main.js.map": "/winnershub/static/js/runtime-main.eb7f2db8.js.map",
-    "static/js/2.d5710d88.chunk.js": "/winnershub/static/js/2.d5710d88.chunk.js",
-    "static/js/2.d5710d88.chunk.js.map": "/winnershub/static/js/2.d5710d88.chunk.js.map",
+    "static/js/2.d435c12e.chunk.js": "/winnershub/static/js/2.d435c12e.chunk.js",
+    "static/js/2.d435c12e.chunk.js.map": "/winnershub/static/js/2.d435c12e.chunk.js.map",
     "index.html": "/winnershub/index.html",
-    "static/css/main.e477b82c.chunk.css.map": "/winnershub/static/css/main.e477b82c.chunk.css.map",
-    "static/js/2.d5710d88.chunk.js.LICENSE.txt": "/winnershub/static/js/2.d5710d88.chunk.js.LICENSE.txt"
+    "static/css/main.d7b90318.chunk.css.map": "/winnershub/static/css/main.d7b90318.chunk.css.map",
+    "static/js/2.d435c12e.chunk.js.LICENSE.txt": "/winnershub/static/js/2.d435c12e.chunk.js.LICENSE.txt",
+    "static/media/a1.fff69e1f.jpg": "/winnershub/static/media/a1.fff69e1f.jpg",
+    "static/media/a10.105011b1.jpg": "/winnershub/static/media/a10.105011b1.jpg",
+    "static/media/a11.b1ae55fe.jpg": "/winnershub/static/media/a11.b1ae55fe.jpg",
+    "static/media/a12.d7c4a739.jpg": "/winnershub/static/media/a12.d7c4a739.jpg",
+    "static/media/a2.7d0efa6d.jpg": "/winnershub/static/media/a2.7d0efa6d.jpg",
+    "static/media/a3.c9cfb911.jpg": "/winnershub/static/media/a3.c9cfb911.jpg",
+    "static/media/a4.7cbf7418.jpg": "/winnershub/static/media/a4.7cbf7418.jpg",
+    "static/media/a5.30503e83.jpg": "/winnershub/static/media/a5.30503e83.jpg",
+    "static/media/a6.8380c175.jpg": "/winnershub/static/media/a6.8380c175.jpg",
+    "static/media/a7.f6130ed1.jpg": "/winnershub/static/media/a7.f6130ed1.jpg",
+    "static/media/a8.7853585b.jpg": "/winnershub/static/media/a8.7853585b.jpg",
+    "static/media/a9.8c477aed.jpg": "/winnershub/static/media/a9.8c477aed.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.eb7f2db8.js",
-    "static/js/2.d5710d88.chunk.js",
-    "static/css/main.e477b82c.chunk.css",
-    "static/js/main.a581d4bc.chunk.js"
+    "static/js/2.d435c12e.chunk.js",
+    "static/css/main.d7b90318.chunk.css",
+    "static/js/main.2ea2303f.chunk.js"
   ]
 }
