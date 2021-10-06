@@ -19,7 +19,9 @@ const Footer = () => {
                         we promise to reply immediately
                     </p>
                     <div className='subs'>
-                        < FaMailBulk/>
+                        <ul>
+                            < FaMailBulk/>
+                        </ul>
                         <input type='email' id='email' 
                         placeholder='Email Address'/>
                         <button type='submit'>SUBSCRIBE</button>

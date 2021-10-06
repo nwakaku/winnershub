@@ -14,11 +14,8 @@ const About = () => {
                 <h2>ARMOR</h2>
                 <h3>DESIGNER || FASHION</h3>
                 <blockquote>
-                    "Designing is a way of feeling, of touching,
-                    of loving. What you have caught on film is
-                     captured forever ... It remembers little things
-                    long after you have forgotten everything."
-                    <span>-Aaron Siskind</span>
+                "Fashion is the armor to survive the reality of everyday life."
+                    <span>-Bill Cunningham</span>
                 </blockquote>
             </div>
 

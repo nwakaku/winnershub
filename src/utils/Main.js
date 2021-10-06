@@ -1,3 +1,6 @@
+import {  Link } from 'react-router-dom';
+
+
 const Main = () => {
     return (
         <section className='section-one'>
@@ -6,10 +9,10 @@ const Main = () => {
                     {/* image here */}
                     <div>
                         <h3>About our basic works...</h3>
-                        <p>Fashion is the armor to survive the reality 
-                            of everyday life
+                        <p>"Fashion is like eating, you shouldn't stick to the same menu."
+                        —Kenzo Takada
                         </p>
-                        <a href = '#' className='btn'>view all</a>
+                        <Link to='/product' className='btn'>Shop</Link>
                     </div>
                 </div>
 
@@ -24,7 +27,7 @@ const Main = () => {
                            Fashion has to do with ideas the way we live,
                            what is happening
                         </p>
-                        <a href='#' className='btn'>view all</a>
+                        <Link to='/gallery' className='btn'>gallery</Link>
                     </div>
                     <div className='work-imgs'>
                         <div className='work-img-1'>
@@ -36,7 +39,7 @@ const Main = () => {
                         </div>
                     </div>
                     <h3>
-                        "Abeg, Life is too short to wear boring clothes"
+                    "Elegance is not standing out, but being remembered." —Giorgio Armani
                     </h3>
                 </div>
             </div>

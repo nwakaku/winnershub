@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaSearch , FaBars} from 'react-icons/fa';
 import {  Link, NavLink } from 'react-router-dom';
+import {FaShoppingBag} from 'react-icons/fa';
 
 
 
@@ -27,8 +28,10 @@ const Nav = () => {
                     <ul>
                         <li><NavLink exact to='/' activeClassName='active'>Home</NavLink></li>
                         <li><NavLink to='/gallery' activeClassName='active'>Gallery</NavLink></li>
-                        <li><NavLink to='/kite' activeClassName='active'>Shop</NavLink></li>
+                        <li><NavLink to='/studio' activeClassName='active'>Studio</NavLink></li>
+                        <li><NavLink to='/product' activeClassName='active'>Shop</NavLink></li>
                         <li><NavLink to='/contact' activeClassName='active'>Contact</NavLink></li>
+                        <li><NavLink to='/cart' activeClassName='active'><FaShoppingBag/></NavLink></li>
                     </ul>
                 </nav>
                 <span className='search-icon'>
