@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import { FaSearch , FaBars} from 'react-icons/fa';
 import {  Link, NavLink } from 'react-router-dom';
 import {FaShoppingBag} from 'react-icons/fa';
+import { getCartItems } from '../features/cart/cartSlice';
+import { useSelector } from 'react-redux';
 
 
 
 
 const Nav = () => {
+    const cartItems = useSelector(getCartItems);
 
     const [open, setOpen] = useState(true)
 
@@ -31,7 +34,11 @@ const Nav = () => {
                         <li><NavLink to='/studio' activeClassName='active'>Studio</NavLink></li>
                         <li><NavLink to='/product' activeClassName='active'>Shop</NavLink></li>
                         <li><NavLink to='/contact' activeClassName='active'>Contact</NavLink></li>
-                        <li><NavLink to='/cart' activeClassName='active'><FaShoppingBag/></NavLink></li>
+                        <li>
+                            <NavLink to='/cart' activeClassName='active'>
+                                <FaShoppingBag/><span className='cart_list'>{cartItems.length}</span>
+                            </NavLink>
+                        </li>
                     </ul>
                 </nav>
                 <span className='search-icon'>
