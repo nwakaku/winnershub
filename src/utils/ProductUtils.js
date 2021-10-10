@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Product from '../data/Product';
 import a from '../images/a1.jpg';
 import b from '../images/a2.jpg';
@@ -15,6 +15,8 @@ import { useSelector } from 'react-redux';
 const ProductUtils = () => {
     const dispatch = useDispatch();
     const cartItems = useSelector(getCartItems);
+
+
 
     return (
         <>
@@ -35,7 +37,8 @@ const ProductUtils = () => {
                                         type = "button" 
                                         className = "btn-cart"
                                         onClick={() => {
-                                            dispatch(addItemToCart(data))
+                                            dispatch(addItemToCart(data));
+                                            console.log(cartItems)
                                         }}> add to cart
                                         <span><i className = "fas fa-plus"></i></span>
                                     </button>

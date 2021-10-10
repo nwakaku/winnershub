@@ -2,6 +2,8 @@ import {useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCartItems, getTotalPrice, removeItemFromCart } from '../features/cart/cartSlice';
 import e from '../images/a5.jpg';
+import { addItemToCart } from '../features/cart/cartSlice';
+
 
 
 const Cart = () => {
@@ -23,6 +25,7 @@ const Cart = () => {
         const newQuantity = quantity - 1;
         setQuantity(newQuantity);
     }
+    
 
     return (
         <div className='product-cart'>
@@ -44,25 +47,27 @@ const Cart = () => {
                                 <img src={e} alt='something moving' />
                             </div>
                             <div className='cart-product-info'>
-                                <p className='cart-product-name'>Furniture Collace collection</p>
-                                <p className='cart-price-sm'>#1,250</p>
-                                <small>* 1</small>
+                                <p className='cart-product-name'>{cartItem.title}</p>
+                                <p className='cart-price-sm'>#{cartItem.new_price}</p>
+                                <small>* {cartItem.qty}</small>
                             </div>
                         </div>
                         <div className='cart-quantity-md'>
                             <div className='cart-quantity-controls'>
                                 <span 
                                     onClick = {reduceQuantity}>-</span>
-                                <input  type='number' value={quantity} readOnly />
+                                <input  type='number' value={cartItem.qty} readOnly />
                                 <span 
-                                    onClick = {addQuantity}>+</span>
+                                    onClick = {() => {
+                                        dispatch(addItemToCart(cartItem));
+                                        }}>+</span>
                             </div>
                         </div>
                         <div className='cart-unit-price'>
-                            <h4>#{cartItem.price}</h4>
+                            <h4>#{cartItem.new_price}</h4>
                         </div>
                         <div className='cart-product-total'>
-                            <h4>#{cartItem.price * quantity}</h4>
+                            <h4>#{cartItem.new_price * cartItem.qty}</h4>
                         </div>
                         <div className='cart-controls-sm'>
                             <div 
@@ -73,9 +78,11 @@ const Cart = () => {
                             <div className='cart-quantity-controls-sm'>
                                 <span 
                                     onClick={reduceQuantity}>-</span>
-                                <input type='number' value={quantity} readOnly />
+                                <input type='number' value={cartItem.qty} readOnly />
                                 <span 
-                                    onClick = {addQuantity}>+</span>
+                                    onClick = {() => {
+                                        dispatch(addItemToCart(cartItem));
+                                        }}>+</span>
                             </div>
                         </div>
                     </form>
