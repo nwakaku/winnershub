@@ -1,5 +1,9 @@
 import React from 'react';
 import Product from '../data/Product';
+import a from '../images/a1.jpg';
+import b from '../images/a2.jpg';
+import c from '../images/a3.jpg';
+import d from '../images/a4.jpg';
 import e from '../images/a5.jpg';
 import { getCartItems } from '../features/cart/cartSlice';
 import { useDispatch } from 'react-redux';
@@ -21,10 +25,10 @@ const ProductUtils = () => {
                 <div className = "product-items">
                     {/* <!-- single product --> */}
                     {Product.map((data) => 
-                        <div className = "product">
+                        <div className = "product" key={data.id} >
                             <div className = "product-content">
                                 <div className = "product-img">
-                                    <img src = {data.img} alt = "product image" />
+                                    <img className='img-src' src = {data.img} alt = "product image" />
                                 </div>
                                 <div className = "product-btns">
                                     <button 
@@ -68,7 +72,7 @@ const ProductUtils = () => {
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product-img">
-                                <img src = {e} alt = "product image"/>
+                                <img src = {a} alt = "product image"/>
                             </div>
                             <div className = "product-btns">
                                 <button type = "button" className = "btn-cart"> add to cart
@@ -101,7 +105,7 @@ const ProductUtils = () => {
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product-img">
-                                <img src = {e} alt = "product image"/>
+                                <img src = {b} alt = "product image"/>
                             </div>
                             <div className = "product-btns">
                                 <button type = "button" className = "btn-cart"> add to cart
@@ -134,7 +138,7 @@ const ProductUtils = () => {
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product-img">
-                                <img src = {e} alt = "product image"/>
+                                <img src = {c} alt = "product image"/>
                             </div>
                             <div className = "product-btns">
                                 <button type = "button" className = "btn-cart"> add to cart
@@ -171,7 +175,7 @@ const ProductUtils = () => {
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product-img">
-                                <img src = {e} alt = "product image"/>
+                                <img src = {d} alt = "product image"/>
                             </div>
                             <div className = "product-btns">
                                 <button type = "button" className = "btn-cart"> add to cart

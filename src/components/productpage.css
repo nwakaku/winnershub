@@ -73,13 +73,16 @@ body{
     cursor: pointer;
 }
 .product-img{
-    background: var(--white-light);
-    box-shadow: 0 0 20px 10px var(--white-light);
     width: 200px;
     height: 200px;
-    margin: 0 auto;
+    overflow: hidden;
+    margin: 10px auto;
     border-radius: 50%;
     transition: background 0.5s ease;
+}
+.product-img > img{
+    object-fit: cover;
+    max-width: 100%;
 }
 .product-btns{
     display: flex;
@@ -147,9 +150,9 @@ body{
 /* .product:hover .product-img img{
     transform: scale(1.1);
 } */
-.product:hover .product-img{
+/* .product:hover .product-img{
     background: var(--carribean-green);
-}
+} */
 .product:hover .product-btns{
     opacity: 1;
 }

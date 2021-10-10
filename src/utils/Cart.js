@@ -37,7 +37,7 @@ const Cart = () => {
                    <p>Total</p>
                </div>
                {cartItems.map(cartItem => 
-                    <div className='cart-item'>
+                    <div className='cart-item' key={cartItem.id}>
                     <form >
                         <div className='cart-product'>
                             <div className='cart-image'>

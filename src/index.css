@@ -55,6 +55,7 @@ body{
 img{
   width: 100%;
   display: block;
+  overflow: hidden;
 }
 ul li{
   list-style: none;
