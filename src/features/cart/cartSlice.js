@@ -16,7 +16,22 @@ export const slice = createSlice({
                     ...state,
                     cartItems: state.cartItems.map((x) => 
                         x.details === existItem.details ? 
-                        {...item, qty:++lastId}: x),
+                        {...item, qty:existItem.qty + 1}: x),
+                };
+            } else {
+               return {...state, cartItems: [...state.cartItems, {...item, qty: lastId}]}
+            }
+            
+        },
+        reduceItemInCart: (state, actions) => {
+            const item = actions.payload;
+            const existItem = state.cartItems.find(x => x.details === item.details);
+            if(existItem){
+                return {
+                    ...state,
+                    cartItems: state.cartItems.map((x) => 
+                        x.details === existItem.details ? 
+                        {...item, qty: existItem.qty - 1}: x),
                 };
             } else {
                return {...state, cartItems: [...state.cartItems, {...item, qty: lastId}]}
@@ -34,11 +49,11 @@ export const slice = createSlice({
 export const getCartItems = state => state.cart.cartItems;
 
 export const getTotalPrice = state => {
-    return state.cart.cartItems.reduce((qty, cartItem) => {
-        return cartItem.new_price * qty;
+    return state.cart.cartItems.reduce((total, cartItem) => {
+        return cartItem.new_price + total;
     }, 0);
 }
 
-export const {addItemToCart, removeItemFromCart} = slice.actions ;
+export const {addItemToCart, removeItemFromCart, reduceItemInCart} = slice.actions ;
 
 export default slice.reducer; 

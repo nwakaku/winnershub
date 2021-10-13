@@ -1,9 +1,8 @@
 import React from 'react';
-import './productpage.css';
-import ProductUtils from '../utils/ProductUtils';
 import Nav from '../utils/Nav';
 import Category2 from '../utils/Category2';
 import Footer from '../utils/Footer';
+import ShopUtils from '../utils/ShopUtils';
 
 
 
@@ -11,7 +10,8 @@ const ProductPage = () => {
     return (
         <section>
             <Nav/>
-           <ProductUtils/>
+           {/* <ProductUtils/> */}
+           <ShopUtils/>
            <Category2/>
            <Footer/>
         
