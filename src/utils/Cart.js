@@ -1,8 +1,10 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCartItems, getTotalPrice, removeItemFromCart } from '../features/cart/cartSlice';
 import e from '../images/a5.jpg';
 import { addItemToCart, reduceItemInCart } from '../features/cart/cartSlice';
+import {MdDeleteForever} from 'react-icons/md';
+
 
 
 
@@ -11,6 +13,10 @@ const Cart = () => {
     const totalPrice = useSelector(getTotalPrice);
     const [quantity, setQuantity] = useState(1);
     const dispatch =  useDispatch();
+
+    useEffect(() => {
+        
+    }, [])
     
 
     const addQuantity = () => {
@@ -50,6 +56,11 @@ const Cart = () => {
                                 <p className='cart-product-name'>{cartItem.title}</p>
                                 <p className='cart-price-sm'>#{cartItem.new_price}</p>
                                 <small>* {cartItem.qty}</small>
+                                <div 
+                                onClick={() => dispatch(removeItemFromCart({cartItemId: cartItem.id}))} 
+                                className='remove'>
+                                <MdDeleteForever/>Remove
+                            </div>
                             </div>
                         </div>
                         <div className='cart-quantity-md'>
@@ -75,7 +86,7 @@ const Cart = () => {
                             <div 
                                 onClick={() => dispatch(removeItemFromCart({cartItemId: cartItem.id}))} 
                                 className='remove'>
-                                <span className='ti-trash'></span>Remove
+                                <MdDeleteForever/>Remove
                             </div>
                             <div className='cart-quantity-controls-sm'>
                                 <span 

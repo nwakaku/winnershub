@@ -1,0 +1,77 @@
+/* Checkout Page */
+.checkout{
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkout-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    height: 680px;
+}
+.checkout-page .billing-detail{
+    width: 60%;
+}
+.order-summary{
+    width: 30%;
+    height: 500px;
+    border: 1px solid rgba(236, 240, 241, 0.3);
+    padding: 5px;
+}
+.order-summary .checkout-total h3{
+    color: blue;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.order-summary .checkout-total span{
+    float: right;
+}
+
+.order-summary .checkout-total ul{
+    list-style: none;
+    padding: 10px;
+}
+.order-summary .checkout-total ul li{
+    margin-bottom: 10px;
+}
+.order-summary .checkout-total ul li a{
+    color: darkblue;
+    background-color: darkcyan;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 8px;
+    margin-top: 20px;
+    display: block;
+}
+.order-summary .checkout-total ul li a:hover{
+    background-color: darkcyan;
+    color: blue;
+}
+
+.order-summary .checkout-total ul li input[type='submit']{
+    color: blue;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    padding: 5px 8px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+.order-summary .checkout-total ul li input[type='submit']:hover{
+    color: blue;
+    background-color: cadetblue;
+}
+
+@media screen and (min-width: 992px){
+    .checkout-page{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}

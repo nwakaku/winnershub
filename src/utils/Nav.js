@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaSearch , FaBars} from 'react-icons/fa';
 import {  Link, NavLink } from 'react-router-dom';
-import {FaShoppingBag} from 'react-icons/fa';
+import {FaShoppingBag, FaUserCircle} from 'react-icons/fa';
 import { getCartItems } from '../features/cart/cartSlice';
 import { useSelector } from 'react-redux';
 
@@ -39,11 +39,17 @@ const Nav = () => {
                                 <FaShoppingBag/><span className='cart_list'>{cartItems.length}</span>
                             </NavLink>
                         </li>
+                        <li>
+                            <span className='search-icon'>
+                                <NavLink to='/signup'>
+                                <FaUserCircle/>
+                                </NavLink>
+                            </span> 
+                        </li>
                     </ul>
+                   
                 </nav>
-                <span className='search-icon'>
-                    <FaSearch/>
-                </span>
+                
             </div>
         </div>
     )

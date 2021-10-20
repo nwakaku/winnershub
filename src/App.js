@@ -6,6 +6,10 @@ import { BrowserRouter as Router, Switch, Route, Link, NavLink } from 'react-rou
 import ProductPage from './components/ProductPage';
 import StudioPage from './components/StudioPage';
 import CartPage from './components/CartPage';
+import Signup from './utils/authentication/Signup';
+import Login from './utils/authentication/Login';
+import Profile from './utils/Profile/Profile';
+import Checkout from './components/Checkout';
 
 const App = () => {
   return (
@@ -29,6 +33,18 @@ const App = () => {
                </Route>
                <Route path="/cart">
                   <CartPage/>
+               </Route>
+               <Route path="/signup">
+                  <Signup/>
+               </Route>
+               <Route path="/login">
+                  <Login/>
+               </Route>
+               <Route path="/profile">
+                  <Profile/>
+               </Route>
+               <Route path="/checkout">
+                  <Checkout/>
                </Route>
             </Switch>          
         </div>

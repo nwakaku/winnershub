@@ -26,6 +26,8 @@
 
 /* PRODUCT DETAILS */
 
+
+
 .producty{
   display: flex;
   padding: 20px;
@@ -191,4 +193,9 @@ button{
   .info{
     margin-top: 2.5rem;
   }
+}
+
+.activity{
+  background-color: red;
+  color: #fff;
 }

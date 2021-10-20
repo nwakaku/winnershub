@@ -10,7 +10,6 @@ import { addItemToCart,reduceItemInCart, } from '../features/cart/cartSlice';
 
 const ItemPop = ({zoom , setZoom, wish, addToWish}) => {
     const dispatch = useDispatch();
-    const [qty, setQty] = useState(1)
 
 
     return (
@@ -55,7 +54,7 @@ const ItemPop = ({zoom , setZoom, wish, addToWish}) => {
                             </div>
                             <h4 className='title'>Size</h4>
                             <div className='sizes'>
-                                <span className='size'>XS</span>
+                                <span className='size activity'>XS</span>
                                 <span className='size'>S</span>
                                 <span className='size'>M</span>
                                 <span className='size'>L</span>
@@ -83,7 +82,7 @@ const ItemPop = ({zoom , setZoom, wish, addToWish}) => {
                         </div>
                     </div>
                     
-                </div> : <div>loading</div>
+                </div> : null
                 }
             </div>
    

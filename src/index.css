@@ -469,6 +469,7 @@ ul{
 }
 
 .cart-image {
+  display: flex;
   height: 75px;
   border-radius: 7px;
   background-size: cover;
@@ -476,7 +477,8 @@ ul{
 }
 
 .cart-image img{
-  max-width: 80%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .cart-quantity-md,
@@ -493,8 +495,8 @@ ul{
 
 .remove {
   font-weight: bold;
-  text-transform: uppercase;
   color: #505050;
+  cursor: pointer;
 }
 
 .cart-quantity-controls-sm,
@@ -567,7 +569,8 @@ ul{
   text-align: center;
   padding: .7rem;
   margin-bottom: .5rem;
-  background: var(--lightGreen);
+  color: #000;
+  transition: all 0.9s ease;;
 }
 
 .cart-action-button a:first-child {
@@ -576,9 +579,20 @@ ul{
   color: var(--white);
 }
 
+.cart-action-button a:last-child {
+  border: 1px solid var(--lightGreen);
+}
+
+
 .cart-header {
   display: none;
 }
+
+.cart-action-button a:hover{
+  background-color: var(--lightGreen);
+  color: #fff;
+}
+
 
 
 /* Media Queries */
@@ -629,6 +643,7 @@ ul{
   .search-icon{
     flex: 0 0 10%;
     display: block;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -693,7 +708,7 @@ ul{
   }
 
   .gallery{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -808,7 +823,7 @@ ul{
 .contact-bottom{
   margin-top: 50px !important;
 }
-.form input[type = 'text'], .form input[type = 'email'], .form textarea{
+.contact-bottom .form input[type = 'text'],.contact-bottom .form input[type = 'email'], .form textarea{
   width: 100%;
   font-size: 16px;
   padding: 10px 15px;
@@ -936,7 +951,7 @@ ul{
 }
 
 .sneaker__pag:hover{
-  background-color: var(--dark-color);
+  background-color: rgb(255, 0, 0, 0.6);
   color: var(--white-color);
   cursor: pointer;
 }

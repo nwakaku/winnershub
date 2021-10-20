@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import e from '../images/a5.jpg';
 
-const PreviewImage = () => {
-    const [image, setImage] = useState();
-    const [preview, setPreview] = useState();
+const PreviewImage = ({image, setImage, preview, setPreview, formProps}) => {
+
     const fileInputRef = useRef();
 
     useEffect(() => {
@@ -12,7 +11,8 @@ const PreviewImage = () => {
             reader.onloadend = () => {
                 setPreview(reader.result);
             };
-            reader.readAsDataURL(image)
+            reader.readAsDataURL(image);
+            formProps.setFieldValue('img', preview);
         } else {
             setPreview(null);
         }
@@ -29,15 +29,16 @@ const PreviewImage = () => {
                         onClick={(e) => {
                         e.preventDefault();
                         fileInputRef.current.click();
-                        console.log(image)
                     }}/>
                         <input
                             type='file'
                             ref={fileInputRef}
+                            name='img'
                             style={{display:"none"}}
                             accept='image/*'
                             onChange={(e) => {
                         const file = e.target.files[0];
+                        
                     if (file && file.type.substr(0, 5) === 'image'){
                         setImage(file);
                         } else {

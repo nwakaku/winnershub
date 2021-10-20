@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import e from '../images/a5.jpg';
 
-const LeftSide = () => {
+const LeftSide = ({ formProps }) => {
     const [image, setImage] = useState();
     const [preview, setPreview] = useState();
     const fileInputRef = useRef();
@@ -29,7 +29,6 @@ const LeftSide = () => {
                         onClick={(e) => {
                         e.preventDefault();
                         fileInputRef.current.click();
-                        console.log(image)
                     }}/>
                         <input
                             type='file'
@@ -38,6 +37,7 @@ const LeftSide = () => {
                             accept='image/*'
                             onChange={(e) => {
                         const file = e.target.files[0];
+                        formProps.setFieldValue('photo4', file)
                     if (file && file.type.substr(0, 5) === 'image'){
                         setImage(file);
                         } else {
