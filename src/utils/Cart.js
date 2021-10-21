@@ -4,6 +4,8 @@ import { getCartItems, getTotalPrice, removeItemFromCart } from '../features/car
 import e from '../images/a5.jpg';
 import { addItemToCart, reduceItemInCart } from '../features/cart/cartSlice';
 import {MdDeleteForever} from 'react-icons/md';
+import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 
 
 
@@ -13,6 +15,7 @@ const Cart = () => {
     const totalPrice = useSelector(getTotalPrice);
     const [quantity, setQuantity] = useState(1);
     const dispatch =  useDispatch();
+    const history = useHistory()
 
     useEffect(() => {
         
@@ -117,8 +120,16 @@ const Cart = () => {
                 </div>
 
                 <div className='cart-action-button'>
-                    <a href='#'>Continue shopping</a>
-                    <a href='#' className='btn-main'>Proceed to checkout</a>
+                    <Link to='/product'>Continue shopping</Link>
+                    <a href='#' className='btn-main'
+                        onClick={
+                            () => {
+                                history.push('/checkout')
+                            }
+
+                        }
+                    
+                    >Proceed to checkout</a>
                 </div>
             </div>
            

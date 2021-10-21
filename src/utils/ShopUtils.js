@@ -22,7 +22,7 @@ const ShopUtils = () => {
             <div className='shop'>
             <div className='shop_aside'>
                 <ul>
-                    <li>categories  <span><FaReact/></span></li>
+                    <li className='active'>categories  <span className='now'><FaReact/></span></li>
                     <li>Hoodies  <span><FaReact/></span></li>
                     <li>Joggers  <span><FaReact/></span></li>
                     <li>Tee Shirts  <span><FaReact/></span></li>

@@ -1,77 +1,97 @@
-/* Checkout Page */
 .checkout{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
-.checkout-page{
+.checkout_details{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px;
-    height: 680px;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.checkout-page .billing-detail{
-    width: 60%;
-}
-.order-summary{
-    width: 30%;
-    height: 500px;
-    border: 1px solid rgba(236, 240, 241, 0.3);
-    padding: 5px;
-}
-.order-summary .checkout-total h3{
-    color: blue;
-    background-color: cadetblue;
-    text-transform: uppercase;
-    padding: 10px;
-}
-.order-summary .checkout-total span{
-    float: right;
+.checkout_information{
+    background-color: rgb(233, 242, 247);
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    height: 100%;
 }
 
-.order-summary .checkout-total ul{
+.checkout_form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.checkout_form input{
+    margin: 10px 15px;
+    padding: 15px 10px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.order_list{
+    display: flex;
+    width: 25%;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.last{
+    display: flex;
+    flex-direction: column;
+}
+
+.order_list button{
+    padding: 10px;
+    border: 1px solid red;
+    margin: 5px 0;
+}
+
+.last :nth-child(){
+    background-color: black;
+    color: white;
+}
+
+
+.order_list button:hover{
+    background-color: rgb(255, 0, 0, 0.8);
+    color: white;
+}
+
+.order_list h3{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+.order_list ul li{
     list-style: none;
-    padding: 10px;
-}
-.order-summary .checkout-total ul li{
-    margin-bottom: 10px;
-}
-.order-summary .checkout-total ul li a{
-    color: darkblue;
-    background-color: darkcyan;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 5px 8px;
-    margin-top: 20px;
-    display: block;
-}
-.order-summary .checkout-total ul li a:hover{
-    background-color: darkcyan;
-    color: blue;
-}
-
-.order-summary .checkout-total ul li input[type='submit']{
-    color: blue;
-    background-color: cadetblue;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    border: none;
-    padding: 5px 8px;
-    margin-top: 20px;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    cursor: pointer;
-}
-.order-summary .checkout-total ul li input[type='submit']:hover{
-    color: blue;
-    background-color: cadetblue;
+    margin: 12px 0;
 }
 
-@media screen and (min-width: 992px){
-    .checkout-page{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+.order_list ul li span{
+
+}
+
+@media (max-width: 1200px){
+    .checkout_information{
+        width: 100%;
+    }
+    .checkout_form input{
+        width: 100%;
+    }    
+    .order_list{
+        width: 100%;
     }
 }
