@@ -1,3 +1,4 @@
+import {FaCouch, FaIdBadge, FaEnvelope, FaIndustry} from 'react-icons/fa'
 
 const ContactInfo = () => {
     return (
@@ -14,7 +15,7 @@ const ContactInfo = () => {
                 <div className='contact-middle'>
                     <div>
                         <span className='contact-icon'>
-                            <i>ul</i>
+                            <i><FaIndustry/></i>
                         </span>
                         <span>Address</span>
                         <p>Main Street --3456, New Umuahia road</p>
@@ -22,7 +23,7 @@ const ContactInfo = () => {
 
                     <div>
                         <span className='contact-icon'>
-                            <i>ul</i>
+                            <i><FaIdBadge/></i>
                         </span>
                         <span>Contact Number</span>
                         <p>4567 3485 2902</p>
@@ -30,7 +31,7 @@ const ContactInfo = () => {
 
                     <div>
                         <span className='contact-icon'>
-                            <i>ul</i>
+                            <i><FaEnvelope/></i>
                         </span>
                         <span>Email Address</span>
                         <p>Wisdom@gmail.com</p>
@@ -38,7 +39,7 @@ const ContactInfo = () => {
 
                     <div>
                         <span className='contact-icon'>
-                            <i>ul</i>
+                            <i><FaCouch/></i>
                         </span>
                         <span>Websites</span>
                         <p>www.armor_lab.com</p>

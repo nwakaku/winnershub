@@ -1,10 +1,20 @@
-import e from '../images/a1.jpg';
+import a from '../images/a1.jpg';
+import b from '../images/a2.jpg';
+import c from '../images/a3.jpg';
+import d from '../images/a4.jpg';
+import e from '../images/a5.jpg';
+import f from '../images/a6.jpg';
+import g from '../images/a7.jpg';
+import h from '../images/a8.jpg';
+import i from '../images/a9.jpg';
+import j from '../images/a10.jpg';
+
 
 
 const Product = [
     {
         id: 1,
-        img: e,
+        img: a,
         title: 'Abia',
         details: 'this is simple a work sample',
         new_price: 130.00,
@@ -13,7 +23,7 @@ const Product = [
     },
     {
         id: 2,
-        img: e,
+        img: b,
         title: 'Imo State',
         details: 'this is from Imo state',
         new_price: 120.00,
@@ -22,7 +32,7 @@ const Product = [
     },
     {
         id: 3,
-        img: e,
+        img: c,
         title: 'uyo city',
         details: 'this is from the great uyo',
         new_price: 170.00,
@@ -31,7 +41,7 @@ const Product = [
     },
     {
         id: 4,
-        img: e,
+        img: d,
         title: 'lifestyle',
         details: 'this is simple a work sample',
         new_price: 130.00,
@@ -49,7 +59,7 @@ const Product = [
     },
     {
         id: 6,
-        img: e,
+        img: f,
         title: 'abstract',
         details: 'Descriptive Comparism',
         new_price: 150.00,
@@ -58,7 +68,7 @@ const Product = [
     },
     {
         id: 7,
-        img: e,
+        img: g,
         title: 'the fall',
         details: 'God loves us',
         new_price: 250.00,
@@ -67,7 +77,7 @@ const Product = [
     },
     {
         id: 8,
-        img: e,
+        img: h,
         title: 'nature',
         details: 'even nature worships God',
         new_price: 230.00,
