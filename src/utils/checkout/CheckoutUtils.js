@@ -2,11 +2,13 @@ import React from 'react'
 import './checkout.css';
 import { getCartItems } from '../../features/cart/cartSlice';
 import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router';
 
 
 
 const CheckoutUtils = () => {
     const cartItems = useSelector(getCartItems);
+    const history = useHistory()
 
     return (
         <div className='checkout container'>
@@ -37,7 +39,9 @@ const CheckoutUtils = () => {
                     <hr/>
                     <div className='last'>
                         <button>PAYMENT</button>
-                        <button >BACK TO SHOP</button>
+                        <button onClick={
+                            () => {history.push('/product')}
+                        }>BACK TO SHOP</button>
                     </div>
                     
                 </div>

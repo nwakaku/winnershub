@@ -11,6 +11,7 @@ import { useHistory } from 'react-router';
 
 
 const Studio = () => {
+    const [title, setTitle] = useState();
     const [total, setTotal] = useState();
     const [image, setImage] = useState();
     const [preview, setPreview] = useState();
@@ -22,7 +23,7 @@ const history =useHistory();
     return (
         <>
                 <Formik
-                    initialValues={{ img: "",
+                    initialValues={{ img: {},
                                      photo2: "",
                                      photo3: "",
                                      photo4: "",
@@ -31,7 +32,9 @@ const history =useHistory();
                                      sex: "",
                                      material: "",
                                     numbers: "",
-                                    details: "" }}
+                                    details: "",
+                                    new_price: {}
+                                 }}
                     onSubmit={(values) => {
                         dispatch(addItemToCart(values));
                         history.push('/cart')
@@ -94,12 +97,23 @@ const history =useHistory();
                                     <div className = "product-detail">
                                         <textarea 
                                          name="details"
-                                         placeholder="what others should we note ..." required/>
+                                         placeholder="what others should we note ..."
+                                         onChange={
+                                             (e) => {
+                                                const word = e.target.value;
+                                                setTotal(word);
+                                             }
+                                         } required/>
                                         <ul>
                                         <li>
                                             <div className='boxy'>
                                                 <label for="boxy">Product: </label>
-                                                <Field name="title" as="select">
+                                                <Field name="title" as="select" onChange={
+                                                    (e) => {
+                                                        setTitle(e.target.value)
+                                                        formProps.setFieldValue('title', e.target.value);
+                                                    }
+                                                }>
                                                     <option value="T-shirt">T-shirt</option>
                                                     <option value="Hoodie">Hoodie</option>
                                                     <option value="Joggers">Joggers</option>
@@ -163,7 +177,16 @@ const history =useHistory();
 
                                     <div className = "purchase-info">
                                     
-                                                <button className='cart' type='submit'>
+                                                <button className='cart' type='submit'
+                                                onClick={
+                                                    () => {formProps.setFieldValue('details', total)
+                                                            formProps.setFieldValue('img', preview)
+                                                        if(title === 'Hoodie'){
+                                                            formProps.setFieldValue('new_price', 125)
+                                                        }else{
+                                                            formProps.setFieldValue('new_price', 100)
+                                                        }}
+                                                }>
                                                     Add to cart
                                                 </button>
                                     </div>

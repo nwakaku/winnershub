@@ -25,11 +25,6 @@ const onSubmit= (values, { setSubmitting }) => {
     dispatch(login(values));
     setSubmitting(false);
     history.push('/profile')
-    console.log(values)
-    // setTimeout(() => {
-    //   alert(JSON.stringify(values, null, 2));
-    //   setSubmitting(false);
-    // }, 400);
   }
       
   

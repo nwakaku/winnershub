@@ -10,6 +10,7 @@ import Signup from './utils/authentication/Signup';
 import Login from './utils/authentication/Login';
 import Profile from './utils/Profile/Profile';
 import Checkout from './components/Checkout';
+import Index from './components/Admin/Index';
 
 const App = () => {
   return (
@@ -45,6 +46,9 @@ const App = () => {
                </Route>
                <Route path="/checkout">
                   <Checkout/>
+               </Route>
+               <Route path="/admin">
+                  <Index/>
                </Route>
             </Switch>          
         </div>

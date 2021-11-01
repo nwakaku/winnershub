@@ -12,7 +12,6 @@ const PreviewImage = ({image, setImage, preview, setPreview, formProps}) => {
                 setPreview(reader.result);
             };
             reader.readAsDataURL(image);
-            formProps.setFieldValue('img', preview);
         } else {
             setPreview(null);
         }
@@ -29,6 +28,7 @@ const PreviewImage = ({image, setImage, preview, setPreview, formProps}) => {
                         onClick={(e) => {
                         e.preventDefault();
                         fileInputRef.current.click();
+                         
                     }}/>
                         <input
                             type='file'

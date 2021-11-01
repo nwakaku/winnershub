@@ -227,3 +227,9 @@ textarea{
         padding-top: 0;
     }
 }
+
+@media screen and (max-width: 992px){
+    .card{
+        margin-top: -18rem;
+    }
+}

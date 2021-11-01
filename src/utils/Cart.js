@@ -1,7 +1,6 @@
 import {useEffect, useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCartItems, getTotalPrice, removeItemFromCart } from '../features/cart/cartSlice';
-import e from '../images/a5.jpg';
 import { addItemToCart, reduceItemInCart } from '../features/cart/cartSlice';
 import {MdDeleteForever} from 'react-icons/md';
 import { useHistory } from 'react-router';
@@ -53,7 +52,7 @@ const Cart = () => {
                     <form >
                         <div className='cart-product'>
                             <div className='cart-image'>
-                                <img src={cartItem.img} alt='something moving' />
+                                <img src={cartItem.img ? cartItem.img : null} alt='something moving' />
                             </div>
                             <div className='cart-product-info'>
                                 <p className='cart-product-name'>{cartItem.title}</p>
